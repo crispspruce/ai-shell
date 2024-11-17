@@ -62,7 +62,7 @@ export async function generateCompletion({
         ? prompt
         : [{ role: 'user', content: prompt }],
       model: model || 'claude-3-5-sonnet-20240620',
-      max_tokens: 200,
+      // max_tokens: 200,
       stream: true,
     });
 
